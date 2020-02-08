@@ -4,9 +4,9 @@
 
 [![Latest Stable Version](https://poser.pugx.org/maileryio/_____/v/stable)](https://packagist.org/packages/maileryio/_____)
 [![Total Downloads](https://poser.pugx.org/maileryio/_____/downloads)](https://packagist.org/packages/maileryio/_____)
-[![Build Status](https://img.shields.io/travis/maileryio/_____.svg)](https://travis-ci.org/maileryio/_____)
-[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/maileryio/_____.svg)](https://scrutinizer-ci.com/g/maileryio/_____/)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/maileryio/_____.svg)](https://scrutinizer-ci.com/g/maileryio/_____/)
+[![Build Status](https://travis-ci.com/maileryio/_____.svg?branch=master)](https://travis-ci.com/maileryio/_____)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/maileryio/_____/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/maileryio/_____/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/maileryio/_____/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/maileryio/_____/?branch=master)
 
 _____
 
