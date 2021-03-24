@@ -5,9 +5,9 @@
     "author": "maileryio",
     "license": "BSD-3-Clause",
     "bugs": {
-        "url": "https://github.com/maileryio/mailery-campaign/issues"
+        "url": "https://github.com/maileryio/_____/issues"
     },
-    "homepage": "https://github.com/maileryio/mailery-campaign#readme"
+    "homepage": "https://github.com/maileryio/_____#readme"
     "dependencies": {
         "@maileryio/_____": "1.0.*"
     },
