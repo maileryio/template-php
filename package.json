@@ -1,6 +1,14 @@
 {
+    "name": "_____",
+    "version": "1.0.0",
+    "description": "_____",
+    "author": "maileryio",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/maileryio/mailery-campaign/issues"
+    },
+    "homepage": "https://github.com/maileryio/mailery-campaign#readme"
     "dependencies": {
         "@maileryio/_____": "1.0.*"
     },
-    "license": "BSD-3-Clause"
 }
