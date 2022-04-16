@@ -7,8 +7,8 @@
     "bugs": {
         "url": "https://github.com/maileryio/_____/issues"
     },
-    "homepage": "https://github.com/maileryio/_____#readme"
+    "homepage": "https://github.com/maileryio/_____#readme",
     "dependencies": {
         "@maileryio/_____": "1.0.*"
-    },
+    }
 }
