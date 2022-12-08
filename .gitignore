@@ -33,6 +33,7 @@ composer.phar
 
 # php-cs-fixer itself is not needed
 .php_cs.cache
+.php-cs-fixer.cache
 php-cs-fixer.phar
 
 # phpunit itself is not needed

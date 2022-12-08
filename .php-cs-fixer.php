@@ -9,7 +9,14 @@ _____
 @copyright Copyright (c) {$date}, Mailery (https://mailery.io/)
 EOF;
 
-return PhpCsFixer\Config::create()
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__)
+    ->notPath('vendor')
+    ->notPath('runtime')
+    ->notPath('web/assets');
+
+return (new PhpCsFixer\Config())
+    ->setFinder($finder)
     ->setUsingCache(true)
     ->setRiskyAllowed(true)
     ->setRules(array(
@@ -17,17 +24,13 @@ return PhpCsFixer\Config::create()
         'header_comment' => [
             'header' => $header,
             'location' => 'after_declare_strict',
-            'commentType' => 'PHPDoc',
+            'comment_type' => 'PHPDoc',
         ],
         'array_syntax' => [
             'syntax' => 'short',
         ],
         'align_multiline_comment' => true,
-        'binary_operator_spaces' => [
-            'align_equals' => false,
-            'align_double_arrow' => false,
-        ],
-        'blank_line_before_statement' => true,
+        'blank_line_before_statement' => ['statements' => ['return']],
         'cast_spaces' => true,
         'combine_consecutive_unsets' => true,
         'combine_consecutive_issets' => true,
@@ -38,7 +41,6 @@ return PhpCsFixer\Config::create()
         'linebreak_after_opening_tag' => true,
         'blank_line_after_opening_tag' => true,
         'blank_line_after_namespace' => true,
-        'blank_line_before_return' => true,
         'date_time_immutable' => true,
         'dir_constant' => true,
         'elseif' => false,
@@ -47,12 +49,12 @@ return PhpCsFixer\Config::create()
         'no_break_comment' => false,
         'no_blank_lines_after_class_opening' => true,
         'no_blank_lines_after_phpdoc' => true,
-        'no_extra_consecutive_blank_lines' => true,
+        'no_extra_blank_lines' => true,
         'no_leading_import_slash' => true,
         'no_leading_namespace_whitespace' => true,
         'no_trailing_comma_in_singleline_array' => true,
         'no_php4_constructor' => true,
-        'no_short_echo_tag' => false,
+        'echo_tag_syntax' => ['format' => 'long'],
         'no_spaces_around_offset' => true,
         'no_unused_imports' => true,
         'no_unreachable_default_argument_value' => true,
@@ -91,8 +93,7 @@ return PhpCsFixer\Config::create()
         'phpdoc_types_order' => [
             'null_adjustment' => 'always_last',
         ],
-        'phpdoc_inline_tag' => true,
-        'psr4' => true,
+        'psr_autoloading' => true,
         'strict_param' => true,
         'self_accessor' => true,
         'semicolon_after_instruction' => true,
@@ -101,11 +102,8 @@ return PhpCsFixer\Config::create()
         ],
         'single_line_comment_style' => false,
         'ternary_to_null_coalescing' => true,
-        'trailing_comma_in_multiline_array' => true,
+        'trailing_comma_in_multiline' => ['elements' => ['arrays']],
         'trim_array_spaces' => true,
-        'method_argument_space' => [
-            'ensure_fully_multiline' => false,
-        ],
         'general_phpdoc_annotation_remove' => [
             'annotations' => [
                 'author',
@@ -116,11 +114,4 @@ return PhpCsFixer\Config::create()
             'syntax' => 'short',
         ],
     ))
-    ->setFinder(
-        PhpCsFixer\Finder::create()
-        ->in(__DIR__)
-        ->notPath('vendor')
-        ->notPath('runtime')
-        ->notPath('web/assets')
-    )
 ;
